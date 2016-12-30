@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<div id="result"></div>
+
+<script  type="text/javascript">
+  function store(){
+     var inputEmail= document.getElementById("email");
+     localStorage.setItem("email", inputEmail.value);
+alert(inputEmail.value);
+
+    }
+</script>
+<form action="http://issuefy.ca.vu/on/login.php" class="form-login"  method="post" /> 
+<input name="email" type="email" id="email" required="" placeholder="Email" />
+<input name="password" type="password" required="" placeholder="Contrasena" />
+<button onclick="store()" type="button">StoreEmail</button>
+</form>
+
+
+
+
+
+<script>
+// Check browser support
+var storedValue = localStorage.getItem("email");
+document.getElementById("email").value=storedValue;
+
+
+
+</script>
+
+
+
+
+</body>
+</html>

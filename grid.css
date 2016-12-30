@@ -1,0 +1,464 @@
+﻿
+* {
+    box-sizing: border-box;
+}
+
+
+
+
+.row::after {
+    content: "";
+    clear: both;
+    display: block;
+}
+[class*="col-"] {
+    float: left;
+    padding: 15px;
+}
+html {
+    font-family: "Lucida Sans", sans-serif;
+}
+.header {
+    background-color: #9933cc;
+    color: #ffffff;
+    padding: 15px;
+background-image:url("grad2.jpg");
+
+
+
+
+
+
+
+
+
+background-size:cover;
+background-repeat:no-repeat;
+background-size: 100% 100%;
+}
+.menu ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+.menu li {
+    padding: 8px;
+    margin-bottom: 7px;
+    background-color :#33b5e5;
+    color: #ffffff;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+.menu li:hover {
+    background-color: #0099cc;
+}
+.aside {
+    background-color: #33b5e5;
+    padding: 15px;
+    color: #ffffff;
+    text-align: center;
+    font-size: 14px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+border-radius: 25px;
+word-wrap: break-word; 
+}
+.footer {
+    background-color: #0099cc;
+    color: #ffffff;
+    text-align: center;
+    font-size: 12px;
+    padding: 15px;background-image:url("slika3.jpg");
+background-size:cover;
+background-repeat:no-repeat;
+background-size: 100% 100%;
+
+}
+/* For mobile phones: */
+[class*="col-"] {
+word-wrap: break-word; 
+    width: 100%;
+
+
+}
+@media only screen and (min-width: 600px) {
+    /* For tablets: */
+
+word-wrap: break-word; 
+
+  input[type="text"] {
+             width: 40%;
+             margin : 0 auto;
+
+align:left;
+        }
+
+
+
+
+
+  input[type="password"] {
+            
+    width: 40%;
+             margin : 0 auto;
+
+align:left;
+  
+        }
+
+ select {
+ 
+           width: 40%;
+             margin : 0 auto;
+
+align:left;
+
+}
+textarea {
+  
+                 width: 40%;
+             margin : 0 auto;
+
+align:left;
+
+}
+
+
+
+
+
+
+    .col-m-1 {width: 8.33%;}
+    .col-m-2 {width: 16.66%;}
+    .col-m-3 {width: 25%;}
+    .col-m-4 {width: 33.33%;}
+    .col-m-5 {width: 41.66%;}
+    .col-m-6 {width: 50%;}
+    .col-m-7 {width: 58.33%;}
+    .col-m-8 {width: 66.66%;}
+    .col-m-9 {width: 75%;}
+    .col-m-10 {width: 83.33%;}
+    .col-m-11 {width: 91.66%;}
+    .col-m-12 {width: 100%;}
+}
+@media only screen and (min-width: 768px) {
+    /* For desktop: */
+
+  input[type="text"] {
+             width: 40%;
+             margin : 0 auto;
+
+align:left;
+        }
+
+
+
+
+
+  input[type="password"] {
+            
+    width: 40%;
+             margin : 0 auto;
+
+align:left;
+  
+        }
+
+ select {
+ 
+           width: 40%;
+             margin : 0 auto;
+
+align:left;
+
+}
+textarea {
+  
+                 width: 40%;
+             margin : 0 auto;
+
+align:left;
+
+}
+
+
+
+
+word-wrap: break-word; 
+
+    .col-1 {width: 8.33%;}
+    .col-2 {width: 16.66%;}
+    .col-3 {width: 25%; }
+    .col-4 {width: 33.33%;}
+    .col-5 {width: 41.66%;}
+    .col-6 {width: 50%;}
+    .col-7 {width: 58.33%;}
+    .col-8 {width: 66.66%;}
+    .col-9 {width: 75%;}
+    .col-10 {width: 83.33%;}
+    .col-11 {width: 91.66%;}
+    .col-12 {width: 100%;}
+}
+
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+
+
+
+
+/* Modal Content */
+.modal-content {
+    position: relative;
+    background-color: #fefefe;
+    margin: auto;
+    padding: 0;
+    border: 1px solid #888;
+    width: 80%;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+    -webkit-animation-name: animatetop;
+    -webkit-animation-duration: 0.4s;
+    animation-name: animatetop;
+    animation-duration: 0.4s
+}
+
+/* Add Animation */
+@-webkit-keyframes animatetop {
+    from {top:-300px; opacity:0} 
+    to {top:0; opacity:1}
+}
+
+@keyframes animatetop {
+    from {top:300px; opacity:0}
+    to {top:0; opacity:1}
+}
+
+
+#menu {
+  list-style-type: none;
+  
+    padding: 0;
+    
+    background-color: red;
+border: 3px solid black;
+}
+
+
+#menu li a, .dropbtn {
+    
+    color: white;
+    text-align: left;
+     margin: 0;
+    padding: 0;
+    text-decoration: none;
+
+}
+a:link { color: red; text-decoration: none}
+
+.modal-header {
+    padding: 2px 16px;
+    background-color: #5cb85c;
+    color: white;
+}
+
+.modal-body {padding: 2px 16px;}
+
+.modal-footer {
+    padding: 2px 16px;
+    background-color: #5cb85c;
+    color: white;
+}
+
+
+.sredina{
+ 
+    padding:0;
+    margin:0;
+
+    top:0;
+    left:0;
+
+    background:rgba(255,255,255,0.5);
+border: 15px solid black;
+background-image:url("slika2.jpg");
+background-size:cover;
+background-repeat:no-repeat;
+background-size: 100% 100%;
+ 
+}
+h1{
+font: 'Lobster Two', Helvetica, sans-serif;
+  text-align:center;
+  text-shadow: 1px 1px 0px #ededed, 4px 4px 0px rgba(0,0,0,0.15);
+font-family: Lobster Two;
+word-wrap: break-word; 
+
+}
+
+p{
+
+  text-align:left;
+
+
+}
+
+
+
+
+
+
+
+
+  input[type="text"] {
+             width: 40%;
+             margin : 0 auto;
+
+align:left;
+        }
+
+
+
+
+
+  input[type="password"] {
+            
+    width: 40%;
+             margin : 0 auto;
+
+align:left;
+  
+        }
+
+ select {
+ 
+           width: 40%;
+             margin : 0 auto;
+
+align:left;
+
+}
+textarea {
+  
+                 width: 40%;
+             margin : 0 auto;
+
+align:left;
+
+}
+
+
+
+
+
+
+
+
+
+
+#ddlista {
+   padding: 8px;
+    margin-bottom: 7px;
+    background-color :#33b5e5;
+    color: #ffffff;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+}
+
+.dropdown{
+    float: left;
+}
+
+.dropdown a, .dropbtn {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.dropdown a:hover, .dropdown:hover .dropbtn {
+    background-color: red;
+}
+
+.dropdown {
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+
+
+
+.mySlides {display:none}
+
+/* Slideshow container */
+.slideshow-container {
+
+  position: relative;
+  margin: auto;
+}
+
+/* dugmad za kretanje  */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  
+  padding: 10px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+ 
+}
+
+
+.next {
+  right: 0;
+ 
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/*manji ekrani*/
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
+}
